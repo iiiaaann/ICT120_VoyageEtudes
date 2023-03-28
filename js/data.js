@@ -1,3 +1,28 @@
+//For main page
+let categories = [
+    {   "url": "participantes.html",
+        "image": "friends.jpg",
+        "alt": "participant",
+        "title": "Participant.es"
+    },
+    {   "url": "#",
+        "image": "train.jpg",
+        "alt": "train",
+        "title": "Transports"
+    },
+    {   "url": "#",
+        "image": "activity.jpg",
+        "alt": "activités",
+        "title": "Activités"
+    },
+    {   "url": "#",
+        "image": "accommodation.jpg",
+        "alt": "accommodation",
+        "title": "Hébergement"
+    }
+]
+
+//For participants
 let participants =[
     {   "last-name":"Ayami",
         "first-name":"Ogay",
@@ -30,3 +55,4 @@ let participants =[
         "url" : "http://intranet.cpnv.ch/etudiants/ayami_ogay"
     }
 ]
+

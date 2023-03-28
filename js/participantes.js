@@ -1,9 +1,10 @@
+//For the page participants
 let participanListMobile= document.getElementById("participant-list-mobile");
 let btnAdd = document.getElementById("new-add");
 let participanListDesktop = document.getElementById("participant-list-desktop");
 let btnAddDesktop = document.getElementById("new-add");
 
-
+//For the page participants
 //For list
 for(let i = 0; i < participants.length; i++) {
     fnAddAccor(participants[i]);
