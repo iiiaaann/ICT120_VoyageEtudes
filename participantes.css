@@ -7,7 +7,7 @@ h1 {
 
 /*for mypage*/
 #participant .bg-img {
-    background-image: url("./DONNEE/image/friends.jpg");
+    background-image: url("img/friends.jpg");
     background-position: center 35%;
     height: 250px;
     background-size: cover;
