@@ -20,7 +20,6 @@
     <!--<link rel="stylesheet" href="https://kit.fontawesome.com/888a3915ce.css" crossorigin="anonymous">-->
     <link rel="stylesheet" href="accueil.css">
     <link rel="stylesheet" href="header_footer.css">
-    <link rel="stylesheet" href="participantes.css">
 </head>
 
 <body>
@@ -30,42 +29,28 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <i class="fa-solid fa-bars ham-menu-icon"></i>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <!--Menu-->
+            <div class="collapse navbar-collapse justify-content-end menu" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Participants</a>
+                        <a class="nav-link" href="participantes.html" >Participants</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Transports</a>
-                            <ul class="sous-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" >Aller</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Sur place</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Retour</a>
-                                </li>
-                            </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transports</a>
+                        <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <li><a class="dropdown-item" href="#">Aller</a></li>
+                                <li><a class="dropdown-item" href="#">Sur place</a></li>
+                                <li><a class="dropdown-item" href="#">Retour</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="ACT">Activités</a>
-                            <ul class="sous-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" >Culture</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Loisir</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Sport</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Restaurant</a>
-                                </li>
-                            </ul>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activités</a>
+                        <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <li><a class="dropdown-item" href="#">Culture</a></li>
+                            <li><a class="dropdown-item" href="#">Loisir</a></li>
+                            <li><a class="dropdown-item" href="#">Restaurant</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item" id="heb">
                         <a class="nav-link" href="#" >Hérbergement</a>
@@ -82,51 +67,15 @@
 
         <div id="img-line">
             <!-- Add elements with javascript -->
-            <!--
-            <div>
-                <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center center-image">
-                    <a href="participantes.html" target="_blank">
-                        <img class="img-category" src="img/participant.jpg" alt="participant">
-                    </a>
-                </div>
-                <h2>Participant.es</h2>
-            </div>
-
-           <div>
-                <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center center-image">
-                    <a href="#">
-                        <img class="img-category" src="img/train.jpg" alt="train">
-                    </a>
-                </div>
-                <h2>Transports</h2>
-            </div>
-
-            <div>
-                <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center center-image">
-                    <a href="#">
-                        <img class="img-category" src="img/activity.jpg" alt="activités">
-                    </a>
-                </div>
-                <h2>Activités</h2>
-            </div>
-
-            <div>
-                <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center center-image">
-                    <a href="#">
-                        <img class="img-category" src="img/accommodation.jpg" alt="accommodation">
-                    </a>
-                </div>
-                <h2>Hébergement</h2>
-            </div>-->
         </div>
     </main>
 
-    <footer>
-        <div id="credits">
+    <footer class="row">
+        <div id="credits" class="col-12 col-lg-6">
             2023 Copyrights ©<br>
             <a href="#">Mentions légales</a>
         </div>
-        <div id="reseaux">
+        <div id="reseaux" class="col-12 col-lg-6">
             <img src="img/face.png" class="img_foot">
             <img src="img/insta.png" class="img_foot">
             <img src="img/twitter.png" class="img_foot">

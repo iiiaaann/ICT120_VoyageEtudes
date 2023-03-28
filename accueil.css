@@ -2,12 +2,6 @@ body {
     color: #465BBF;
 }
 
-header,
-footer {
-    height: 50px;
-    background-color: #99A5C2;
-}
-
 .bg-img {
     /*le height doit absolument être dans le container*/
     position: relative;
@@ -38,8 +32,8 @@ footer {
 
 .img-category {
     object-fit: cover;
-    height: 305px;
-    width: 305px;
+    height: 205px;
+    width: 205px;
     border-radius: 50%;
 }
 

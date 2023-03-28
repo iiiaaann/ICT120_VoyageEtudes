@@ -15,7 +15,7 @@ function fnAddCategory(category) {
     //<a href="participantes.html" target="_blank">
     let categoryURL = document.createElement("a");
     categoryURL.setAttribute('href', category["url"]);
-    categoryURL.setAttribute('target', '_blank');
+    //categoryURL.setAttribute('target', '_blank');
     categoryURL.appendChild(categoryImg);
     //<div className="col-12 col-lg-3 d-flex justify-content-center align-items-center center-image">
     let categoryInsideDiv = document.createElement("div");
