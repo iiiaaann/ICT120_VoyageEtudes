@@ -68,7 +68,6 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin: auto;
         padding: 15px;
         gap: 15px;
     }
