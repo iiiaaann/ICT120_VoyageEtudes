@@ -3,7 +3,6 @@ body {
 }
 
 header {
-    height: 80px;
     background-color: #99A5C2;
 }
 
@@ -12,7 +11,7 @@ footer{
     margin: 0;
 }
 .logo  {
-    width: 100px;
+    width: 80px;
     margin-left: 20px;
     margin-top: 5px;
 }
@@ -21,11 +20,19 @@ footer{
 }
 .navbar-toggler {
     border: none;
+    margin-right: 20px;
+}
+.nav-menu {
+    padding-left: 26px;
 }
 .nav-link {
     color: #465BBF;
     padding: 2px;
 }
+.nav-link:hover  {
+    color : #465BBF;
+}
+
 #collapsibleNavbar{
 
 }
@@ -35,7 +42,8 @@ footer{
 }
 
 #collapsibleNavbar ul li:hover {
-    background-color: #F6BA9D;
+    background-color: #DAF1F6;
+    color : #465BBF;
     z-index: 2;
 }
 #collapsibleNavbar ul li:hover .sous-menu{
@@ -61,7 +69,7 @@ footer{
 }
 
 .sub-menu {
-    --bs-dropdown-link-active-bg: #F6BA9D;
+    --bs-dropdown-link-active-bg: #DAF1F6;
 }
 
 .img_foot {
@@ -83,6 +91,9 @@ a {
 }
 /*For descktop*/
 @media only screen and (min-width: 576px) {
+    .logo {
+        width: 100px;
+    }
     .img_foot {
         height: 40px;
     }
@@ -94,5 +105,11 @@ a {
     }
     #credits {
         width: 50%;
+    }
+    .nav-menu {
+        padding-right: 20px;
+    }
+    .nav-link {
+        font-size: 1.3rem;
     }
 }
