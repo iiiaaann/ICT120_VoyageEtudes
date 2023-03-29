@@ -78,7 +78,7 @@ btnAdd.addEventListener("click", (event)=> {
 
 //Desktop
 function fnAddParticipant(participant) {
-    //<div className="col-lg-3">
+    //<div className="col-lg-3 mb-3">
     let participantDiv = document.createElement("div");
     participantDiv.className ="col-lg-3 mb-3";
     //<h3 class = "mb-0" >
