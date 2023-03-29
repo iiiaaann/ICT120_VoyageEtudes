@@ -104,7 +104,7 @@ h1 {
 }
 
 /*For descktop*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
     #participant .bg-img {
         background-size: cover;
         background-position: center 44%;
