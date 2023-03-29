@@ -43,8 +43,8 @@ h2 {
     font-size: 30px;
 }
 
-footer {
-    margin-top: 20px;
+#img-line > div{
+    margin-bottom: 25px;
 }
 
 /*For desktop*/
