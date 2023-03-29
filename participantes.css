@@ -9,7 +9,7 @@ h1 {
 #participant .bg-img {
     background-image: url("img/friends.jpg");
     background-position: center 35%;
-    height: 250px;
+    height: 190px;
     background-size: cover;
     /*To place the element with .title at center of this element*/
     position: relative;
