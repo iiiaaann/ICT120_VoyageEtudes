@@ -54,6 +54,10 @@ btnAdd.addEventListener("click", (event)=> {
         alert("Nom et prénom sont obligatoires.");
         return;
     }
+    if (newAge < 1) {
+        alert("Veuillez entrer un âge plus grand que 1");
+        return;
+    }
     //For mobile
     //<h2 class="accordion__title js-accordion-title mb-0">Accordion Title 1</h2>
     let newAccoItemTitle = document.createElement("h2");
