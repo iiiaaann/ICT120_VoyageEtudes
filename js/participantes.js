@@ -1,12 +1,12 @@
 //For the page participants
-let participanListMobile= document.getElementById("participant-list-mobile");
+let participanListMobile = document.getElementById("participant-list-mobile");
 let btnAdd = document.getElementById("new-add");
 let participanListDesktop = document.getElementById("participant-list-desktop");
 let btnAddDesktop = document.getElementById("new-add");
 
 //For the page participants
 //For list
-for(let i = 0; i < participants.length; i++) {
+for (let i = 0; i < participants.length; i++) {
     fnAddAccor(participants[i]);
     fnAddParticipant(participants[i]);
 }
@@ -22,17 +22,17 @@ function fnAddAccor(participant) {
     let accoItemDetails = document.createElement("div");
     accoItemDetails.className = "accordion__content";
     accoItemDetails.innerHTML = `<div>
-                                 <p>Age` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: ` + participant["age"] + `</p>
-                                 <p>Email  : <a href="mailto:` + participant["email"] + `">`+ participant["email"] +`</a></p>
-                                 <p>URL` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: <a href="` + participant["url"] + `">Itranet (cpnv)</a>
+                                 <p>Age` + "\u00A0" + "\u00A0" + "\u00A0" + `: ` + participant["age"] + `</p>
+                                 <p>Email  : <a href="mailto:` + participant["email"] + `">` + participant["email"] + `</a></p>
+                                 <p>URL` + "\u00A0" + "\u00A0" + "\u00A0" + `: <a href="` + participant["url"] + `">Itranet (cpnv)</a>
                                  </div>`;
     participanListMobile.appendChild(accoItemTitle);
     participanListMobile.appendChild(accoItemDetails);
 }
 //accordion list
-document.addEventListener("DOMContentLoaded",() => {
+document.addEventListener("DOMContentLoaded", () => {
     let title = document.querySelectorAll('.js-accordion-title');
-    for (let i = 0; i < title.length; i++){
+    for (let i = 0; i < title.length; i++) {
         let titleEach = title[i];
         let content = titleEach.nextElementSibling;
         titleEach.addEventListener('click', () => {
@@ -44,18 +44,18 @@ document.addEventListener("DOMContentLoaded",() => {
 });
 
 //btn add new
-btnAdd.addEventListener("click", (event)=> {
+btnAdd.addEventListener("click", (event) => {
     let newLastName = document.getElementById("last-name").value;
     let newFirstName = document.getElementById("first-name").value;
     let newAge = document.getElementById("age").value;
     let newEmail = document.getElementById("email").value;
     let newUrl = document.getElementById("url-cpnv").value;
-    if((newLastName == "") || (newFirstName == "")) {
+    if ((newLastName == "") || (newFirstName == "")) {
         alert("Nom et prénom sont obligatoires.");
         return;
     }
-    if (newAge < 1) {
-        alert("Veuillez entrer un âge plus grand que 1");
+    if ((newAge < 1) || (newAge > 115)) {
+        alert("Veuillez entrer un âge entre 1 et 115");
         return;
     }
     //For mobile
@@ -69,7 +69,7 @@ btnAdd.addEventListener("click", (event)=> {
     newAccoItemDetails.className = "accordion__content  is-open";
     newAccoItemDetails.innerHTML = `<div>
                                  <p>Age&nbsp&nbsp&nbsp:` + +  newAge + `</p>
-                                 <p>Email  : <a href="mailto:` + newEmail + `">`+ newEmail +`</a></p>
+                                 <p>Email  : <a href="mailto:` + newEmail + `">` + newEmail + `</a></p>
                                  <p>URL&nbsp&nbsp&nbsp: <a href="` + newUrl + `">Itranet (cpnv)</a>
                                  </div>`;
     participanListMobile.appendChild(newAccoItemTitle);
@@ -77,14 +77,15 @@ btnAdd.addEventListener("click", (event)=> {
 
     //For Desktop
     let newNumberDesktop =
-        {   "last-name":newLastName,
-            "first-name":newFirstName,
-            "age":newAge,
-            "email":newEmail,
-            "url" : newUrl
-        }
+    {
+        "last-name": newLastName,
+        "first-name": newFirstName,
+        "age": newAge,
+        "email": newEmail,
+        "url": newUrl
+    }
     fnAddParticipant(newNumberDesktop);
-    window.scroll(0, (document.documentElement.scrollHeight- document.documentElement.clientHeight));
+    window.scroll(0, (document.documentElement.scrollHeight - document.documentElement.clientHeight));
     //Reset form
     document.getElementById("new-participant").reset();
     event.preventDefault();
@@ -94,7 +95,7 @@ btnAdd.addEventListener("click", (event)=> {
 function fnAddParticipant(participant) {
     //<div className="col-lg-3 mb-3">
     let participantDiv = document.createElement("div");
-    participantDiv.className ="col-lg-3 mb-3";
+    participantDiv.className = "col-lg-3 mb-3";
     //<h3 class = "mb-0" >
     let participantName = document.createElement("h3");
     participantName.innerHTML = participant["last-name"] + " " + participant["first-name"];
@@ -103,9 +104,9 @@ function fnAddParticipant(participant) {
     let participantDetailText = document.createElement("div");
     participantDetailText.className = "participant-details"
     participantDetailText.innerHTML =
-                                `<p>Age` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: ` + participant["age"] + `</p>
-                                 <p>Email  :<br><a href="mailto:` + participant["email"] + `">`+ participant["email"] +`</a></p>
-                                 <p>URL` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: <a href="` + participant["url"] + `">Intranet</a>
+        `<p>Age` + "\u00A0" + "\u00A0" + "\u00A0" + `: ` + participant["age"] + `</p>
+                                 <p>Email  :<br><a href="mailto:` + participant["email"] + `">` + participant["email"] + `</a></p>
+                                 <p>URL` + "\u00A0" + "\u00A0" + "\u00A0" + `: <a href="` + participant["url"] + `">Intranet</a>
                                  `;
     participantDiv.appendChild(participantName);
     participantDiv.appendChild(participantDetailText);
