@@ -1,4 +1,5 @@
 *.psd
+*.pdf
 .idea/ICT120_VoyageEtudes.iml
 .idea/modules.xml
 .idea/vcs.xml
