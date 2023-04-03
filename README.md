@@ -23,12 +23,12 @@ https://www.figma.com/file/BbJFF1dFS8xKDbhzdcwlBq/AIA?node-id=0-1&t=S96B1h4PZ9JT
 
 <h1>Nos couleurs</h1>
 
-![](2023-04-03-08-50-15.png)
+![](img/readme/2023-04-03-08-50-15.png)
 
-![](2023-04-03-08-50-43.png)
+![](img/readme/2023-04-03-08-50-43.png)
 
-![](2023-04-03-08-51-07.png)
+![](img/readme/2023-04-03-08-51-07.png)
 
-![](2023-04-03-08-51-28.png)
+![](img/readme/2023-04-03-08-51-28.png)
 
-![](2023-04-03-08-51-41.png)
+![](img/readme/2023-04-03-08-51-41.png)
