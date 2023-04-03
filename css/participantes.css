@@ -1,19 +1,20 @@
-
 /*commun*/
 h1 {
     color: #DAF1F6;
 }
+
 /*commun*/
 
 /*for mypage*/
 #participant .bg-img {
-    background-image: url("img/friends.jpg");
+    background-image: url("../img/friends.jpg");
     background-position: center 35%;
     height: 190px;
     background-size: cover;
     /*To place the element with .title at center of this element*/
     position: relative;
 }
+
 #participant .title {
     display: inline-block;
     /*To place it center of the element .bg-img*/
@@ -22,10 +23,13 @@ h1 {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
-#participant .btn-search, #participant .add-form .btn {
+
+#participant .btn-search,
+#participant .add-form .btn {
     background: #F6BA9D;
     color: white;
 }
+
 #participant .form-label span {
     color: #F6BA9D;
 }
@@ -43,7 +47,7 @@ h1 {
 }
 
 /* for accordion */
-.accordion{
+.accordion {
     margin-top: 10px;
 }
 
@@ -62,7 +66,8 @@ h1 {
     user-select: none;
 }
 
-.accordion__title::before, .accordion__title::after {
+.accordion__title::before,
+.accordion__title::after {
     content: '';
     display: block;
     background-color: #ffffff;
@@ -106,7 +111,8 @@ h1 {
 .accordion__content.is-open {
     border: 1px solid #C2A099;
     padding: .625em 1.5em;
-    line-height: normal; /* numberに書き換える*/
+    line-height: normal;
+    /* numberに書き換える*/
     height: auto;
     opacity: 1;
 }
@@ -123,12 +129,15 @@ h1 {
         width: 80%;
         margin: auto;
     }
+
     #participant .mobile-list {
         display: none;
     }
+
     #participant .desktop-list {
         display: block;
     }
+
     #participant h3 {
         background-color: #C2A099;
         border: 1px solid transparent;
@@ -136,6 +145,7 @@ h1 {
         font-size: 1.25em;
         padding: 0.625em 0.625em 0.625em 2em;
     }
+
     #participant .participant-details {
         border: 1px solid #C2A099;
         padding: 0.625em 1.5em;
@@ -143,6 +153,7 @@ h1 {
         height: auto;
         opacity: 1;
     }
+
     #participant .btn {
         font-size: 25px;
     }
