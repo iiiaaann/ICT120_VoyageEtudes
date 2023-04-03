@@ -50,6 +50,7 @@ footer {
     background-color: #DAF1F6;
     color: #465BBF;
     z-index: 2;
+    border-radius: 6px;
 }
 
 #collapsibleNavbar ul li:hover .sous-menu {

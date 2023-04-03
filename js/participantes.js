@@ -23,7 +23,7 @@ function fnAddAccor(participant) {
     accoItemDetails.className = "accordion__content";
     accoItemDetails.innerHTML = `<div>
                                  <p>Age` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: ` + participant["age"] + `</p>
-                                 <p>Email  : ` +  participant["email"] + `</p>
+                                 <p>Email  : <a href="mailto:` + participant["email"] + `">`+ participant["email"] +`</a></p>
                                  <p>URL` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: <a href="` + participant["url"] + `">Itranet (cpnv)</a>
                                  </div>`;
     participanListMobile.appendChild(accoItemTitle);
@@ -65,7 +65,7 @@ btnAdd.addEventListener("click", (event)=> {
     newAccoItemDetails.className = "accordion__content  is-open";
     newAccoItemDetails.innerHTML = `<div>
                                  <p>Age&nbsp&nbsp&nbsp:` + +  newAge + `</p>
-                                 <p>Email  :` +  newEmail + `</p>
+                                 <p>Email  : <a href="mailto:` + newEmail + `">`+ newEmail +`</a></p>
                                  <p>URL&nbsp&nbsp&nbsp: <a href="` + newUrl + `">Itranet (cpnv)</a>
                                  </div>`;
     participanListMobile.appendChild(newAccoItemTitle);
@@ -98,9 +98,10 @@ function fnAddParticipant(participant) {
     //<div>
     let participantDetailText = document.createElement("div");
     participantDetailText.className = "participant-details"
+    //<a href="mailto:info@example.com">メールはこちらへ</a>
     participantDetailText.innerHTML =
                                 `<p>Age` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: ` + participant["age"] + `</p>
-                                 <p>Email  :<br>` + participant["email"] + `</p>
+                                 <p>Email  :<br><a href="mailto:` + participant["email"] + `">`+ participant["email"] +`</a></p>
                                  <p>URL` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: <a href="` + participant["url"] + `">Intranet</a>
                                  `;
     participantDiv.appendChild(participantName);
