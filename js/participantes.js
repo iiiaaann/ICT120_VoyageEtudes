@@ -85,8 +85,8 @@ btnAdd.addEventListener("click", (event)=> {
         }
     fnAddParticipant(newNumberDesktop);
     window.scroll(0, (document.documentElement.scrollHeight- document.documentElement.clientHeight));
-    event.preventDefault();
-
+    //Reset form
+    document.getElementById("new-participant").reset();
     event.preventDefault();
 });
 
