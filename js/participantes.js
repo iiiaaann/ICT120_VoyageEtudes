@@ -98,7 +98,6 @@ function fnAddParticipant(participant) {
     //<div>
     let participantDetailText = document.createElement("div");
     participantDetailText.className = "participant-details"
-    //<a href="mailto:info@example.com">メールはこちらへ</a>
     participantDetailText.innerHTML =
                                 `<p>Age` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: ` + participant["age"] + `</p>
                                  <p>Email  :<br><a href="mailto:` + participant["email"] + `">`+ participant["email"] +`</a></p>
