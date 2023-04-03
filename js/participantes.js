@@ -50,11 +50,11 @@ btnAdd.addEventListener("click", (event)=> {
     let newAge = document.getElementById("age").value;
     let newEmail = document.getElementById("email").value;
     let newUrl = document.getElementById("url-cpnv").value;
-    if(newLastName == "" || newFirstName == "") {
+    if((newLastName == "") || (newFirstName == "")) {
         alert("Nom et prénom sont obligatoires.");
         return;
     }
-    console.log(newFirstName);
+    //For mobile
     //<h2 class="accordion__title js-accordion-title mb-0">Accordion Title 1</h2>
     let newAccoItemTitle = document.createElement("h2");
     newAccoItemTitle.className = "accordion__title js-accordion-title mb-0 is-active";
@@ -70,8 +70,19 @@ btnAdd.addEventListener("click", (event)=> {
                                  </div>`;
     participanListMobile.appendChild(newAccoItemTitle);
     participanListMobile.appendChild(newAccoItemDetails);
-    window.scroll(0, (document.documentElement.scrollHeight- document.documentElement.clientHeight));
+    //window.scroll(0, (document.documentElement.scrollHeight- document.documentElement.clientHeight));
 
+    //For Desktop
+    let newNumberDesktop =
+        {   "last-name":newLastName,
+            "first-name":newFirstName,
+            "age":newAge,
+            "email":newEmail,
+            "url" : newUrl
+        }
+    fnAddParticipant(newNumberDesktop);
+    window.scroll(0, (document.documentElement.scrollHeight- document.documentElement.clientHeight));
+    event.preventDefault();
 
     event.preventDefault();
 });
@@ -98,6 +109,7 @@ function fnAddParticipant(participant) {
     participanListDesktop.appendChild(participantDiv);
 }
 
+/*
 btnAddDesktop.addEventListener("click", (event)=> {
     let newLastName = document.getElementById("last-name").value;
     let newFirstName = document.getElementById("first-name").value;
@@ -118,4 +130,4 @@ btnAddDesktop.addEventListener("click", (event)=> {
     fnAddParticipant(newNumberDesktop);
     window.scroll(0, (document.documentElement.scrollHeight- document.documentElement.clientHeight));
     event.preventDefault();
-});
+});*/
