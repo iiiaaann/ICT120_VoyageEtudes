@@ -22,9 +22,9 @@ function fnAddAccor(participant) {
     let accoItemDetails = document.createElement("div");
     accoItemDetails.className = "accordion__content";
     accoItemDetails.innerHTML = `<div>
-                                 <p>Age` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `:` + participant["age"] + `</p>
-                                 <p>Email  :` +  participant["email"] + `</p>
-                                 <p>URL` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: <a href="` + participant["url"] + `">Iternet</a>
+                                 <p>Age` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: ` + participant["age"] + `</p>
+                                 <p>Email  : ` +  participant["email"] + `</p>
+                                 <p>URL` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: <a href="` + participant["url"] + `">Itranet (cpnv)</a>
                                  </div>`;
     participanListMobile.appendChild(accoItemTitle);
     participanListMobile.appendChild(accoItemDetails);
@@ -66,11 +66,10 @@ btnAdd.addEventListener("click", (event)=> {
     newAccoItemDetails.innerHTML = `<div>
                                  <p>Age&nbsp&nbsp&nbsp:` + +  newAge + `</p>
                                  <p>Email  :` +  newEmail + `</p>
-                                 <p>URL&nbsp&nbsp&nbsp: <a href="` + newUrl + `">Iternet</a>
+                                 <p>URL&nbsp&nbsp&nbsp: <a href="` + newUrl + `">Itranet (cpnv)</a>
                                  </div>`;
     participanListMobile.appendChild(newAccoItemTitle);
     participanListMobile.appendChild(newAccoItemDetails);
-    //window.scroll(0, (document.documentElement.scrollHeight- document.documentElement.clientHeight));
 
     //For Desktop
     let newNumberDesktop =
@@ -100,34 +99,11 @@ function fnAddParticipant(participant) {
     let participantDetailText = document.createElement("div");
     participantDetailText.className = "participant-details"
     participantDetailText.innerHTML =
-                                `<p>Age` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `:` + participant["age"] + `</p>
-                                 <p>Email  :` +  participant["email"] + `</p>
-                                 <p>URL` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: <a href="` + participant["url"] + `">Iternet</a>
+                                `<p>Age` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: ` + participant["age"] + `</p>
+                                 <p>Email  :<br>` + participant["email"] + `</p>
+                                 <p>URL` +  "\u00A0"  +  "\u00A0"  +  "\u00A0" + `: <a href="` + participant["url"] + `">Intranet</a>
                                  `;
     participantDiv.appendChild(participantName);
     participantDiv.appendChild(participantDetailText);
     participanListDesktop.appendChild(participantDiv);
 }
-
-/*
-btnAddDesktop.addEventListener("click", (event)=> {
-    let newLastName = document.getElementById("last-name").value;
-    let newFirstName = document.getElementById("first-name").value;
-    let newAge = document.getElementById("age").value;
-    let newEmail = document.getElementById("email").value;
-    let newUrl = document.getElementById("url-cpnv").value;
-    if(newLastName == "" || newFirstName == "") {
-        alert("Nom et prénom sont obligatoires.");
-        return;
-    }
-    let newNumberDesktop =
-    {   "last-name":newLastName,
-        "first-name":newFirstName,
-        "age":newAge,
-        "email":newEmail,
-        "url" : newUrl
-    }
-    fnAddParticipant(newNumberDesktop);
-    window.scroll(0, (document.documentElement.scrollHeight- document.documentElement.clientHeight));
-    event.preventDefault();
-});*/

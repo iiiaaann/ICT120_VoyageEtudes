@@ -22,16 +22,24 @@ h1 {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
-#participant .btn-search, #participant .add-form {
-    border-radius: 0.5em;
-}
 #participant .btn-search, #participant .add-form .btn {
     background: #F6BA9D;
     color: white;
 }
+#participant .form-label span {
+    color: #F6BA9D;
+}
 
 #participant .desktop-list {
     display: none;
+}
+
+#participant a {
+    color: #465BBF;
+}
+
+#participant a:hover {
+    color: #99A5C2;
 }
 
 /* for accordion */
@@ -110,10 +118,7 @@ h1 {
         background-position: center 44%;
         height: 450px;
     }
-    #participant .btn-search, #participant .add-form .btn {
-        background: #F6BA9D;
-        color: white;
-    }
+
     #participant .submit-btn {
         width: 80%;
         margin: auto;

@@ -26,33 +26,33 @@ let categories = [
 let participants =[
     {   "last-name":"Ayami",
         "first-name":"Ogay",
-        "age":"1",
-        "email":"user1@email",
+        "age":"25",
+        "email":"Ayami.OGAY@cpnv.ch",
         "url" : "http://intranet.cpnv.ch/etudiants/ayami_ogay"
     },
-    {   "last-name":"last-name2",
-        "first-name":"name2",
-        "age":"2",
-        "email":"user1@email",
-        "url" : "http://intranet.cpnv.ch/etudiants/ayami_ogay"
+    {   "last-name":"Ian",
+        "first-name":"Clot",
+        "age":"20",
+        "email":"Ian.CLOT@cpnv.ch",
+        "url" : "http://intranet.cpnv.ch/etudiants/ian_clot"
     },
-    {   "last-name":"last-name3",
-        "first-name":"name3",
-        "age":"3",
-        "email":"user1@email3",
-        "url" : "http://intranet.cpnv.ch/etudiants/ayami_ogay"
+    {   "last-name":"Ambre",
+        "first-name":"Miellot",
+        "age":"20",
+        "email":"Ambre.MIELLOT@cpnv.ch",
+        "url" : "http://intranet.cpnv.ch/etudiants/ambre_miellot"
     },
-    {   "last-name":"last-name4",
-        "first-name":"name4",
-        "age":"4",
-        "email":"user1@email4",
-        "url" : "http://intranet.cpnv.ch/etudiants/ayami_ogay"
+    {   "last-name":"Antoine",
+        "first-name":"Martet",
+        "age":"25",
+        "email":"Antoine.MARTET@cpnv.ch",
+        "url" : "http://intranet.cpnv.ch/etudiants/antoine_martet"
     },
-    {   "last-name":"last-name5",
-        "first-name":"name5",
-        "age":"5",
-        "email":"user1@email",
-        "url" : "http://intranet.cpnv.ch/etudiants/ayami_ogay"
+    {   "last-name":"Lucas",
+        "first-name":"Machard",
+        "age":"20",
+        "email":"Lucas.MACHARD@cpnv.ch",
+        "url" : "http://intranet.cpnv.ch/etudiants/lucas_machard"
     }
 ]
 
